@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - oneLaguna</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .blog-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/blog-header.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 12rem 0 8rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .blog-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .blog-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .category-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+        }
+        
+        .featured-post {
+            position: relative;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        
+        .featured-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">YaoCabu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="blog-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Travel Blog</h1>
+                    <p class="lead">Discover the World Through Our Stories</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Post -->
+    <section class="featured-post-section py-5">
+        <div class="container">
+            <div class="featured-post" style="background-image: url('../images/blog/featured-post.jpg');">
+                <div class="featured-content">
+                    <span class="category-badge">Featured</span>
+                    <h2 class="mb-3">10 Hidden Gems in Southeast Asia You Need to Visit</h2>
+                    <p class="mb-2">Discover off-the-beaten-path destinations that will take your breath away.</p>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-user-circle me-2 text-light" style="font-size: 1.2rem;"></i>
+                        <span class="me-3">By Sarah Johnson</span>
+                        <span><i class="far fa-calendar-alt me-2"></i>March 15, 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card blog-card">
+                                <img src="../images/blog/post1.jpg" class="card-img-top" alt="Travel Tips">
+                                <div class="category-badge">Travel Tips</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Essential Packing Tips for Long-Term Travel</h5>
+                                    <p class="card-text">Learn how to pack efficiently for your next adventure without overpacking.</p>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-user-circle me-2 text-primary" style="font-size: 1.2rem;"></i>
+                                        <span class="me-3">By Michael Chen</span>
+                                        <span><i class="far fa-calendar-alt me-2"></i>March 10, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card blog-card">
+                                <img src="../images/blog/post2.jpg" class="card-img-top" alt="Destination Guide">
+                                <div class="category-badge">Destination Guide</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Exploring the Ancient Temples of Kyoto</h5>
+                                    <p class="card-text">A comprehensive guide to Kyoto's most beautiful temples and cultural sites.</p>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-user-circle me-2 text-primary" style="font-size: 1.2rem;"></i>
+                                        <span class="me-3">By Emily Wilson</span>
+                                        <span><i class="far fa-calendar-alt me-2"></i>March 5, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card blog-card">
+                                <img src="../images/blog/post3.jpg" class="card-img-top" alt="Food & Culture">
+                                <div class="category-badge">Food & Culture</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Street Food Adventures in Bangkok</h5>
+                                    <p class="card-text">Discover the best street food markets and must-try dishes in Bangkok.</p>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-user-circle me-2 text-primary" style="font-size: 1.2rem;"></i>
+                                        <span class="me-3">By David Kim</span>
+                                        <span><i class="far fa-calendar-alt me-2"></i>February 28, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card blog-card">
+                                <img src="../images/blog/post4.jpg" class="card-img-top" alt="Adventure">
+                                <div class="category-badge">Adventure</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Hiking the Inca Trail to Machu Picchu</h5>
+                                    <p class="card-text">Everything you need to know about this iconic trek through the Andes.</p>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-user-circle me-2 text-primary" style="font-size: 1.2rem;"></i>
+                                        <span class="me-3">By Lisa Rodriguez</span>
+                                        <span><i class="far fa-calendar-alt me-2"></i>February 20, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <!-- Sidebar -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Search</h5>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search articles...">
+                                <button class="btn btn-light" type="button"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Categories</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none">Travel Tips (12)</a></li>
+                                <li><a href="#" class="text-decoration-none">Destination Guides (8)</a></li>
+                                <li><a href="#" class="text-decoration-none">Food & Culture (6)</a></li>
+                                <li><a href="#" class="text-decoration-none">Adventure (4)</a></li>
+                                <li><a href="#" class="text-decoration-none">Travel Photography (3)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Posts</h5>
+                            <div class="d-flex mb-3">
+                                <i class="far fa-file-alt me-3 text-primary" style="font-size: 2rem; width: 60px; text-align: center;"></i>
+                                <div>
+                                    <h6 class="mb-0">Essential Packing Tips</h6>
+                                    <small class="text-muted">March 10, 2024</small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <i class="far fa-file-alt me-3 text-primary" style="font-size: 2rem; width: 60px; text-align: center;"></i>
+                                <div>
+                                    <h6 class="mb-0">Kyoto Temple Guide</h6>
+                                    <small class="text-muted">March 5, 2024</small>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <i class="far fa-file-alt me-3 text-primary" style="font-size: 2rem; width: 60px; text-align: center;"></i>
+                                <div>
+                                    <h6 class="mb-0">Bangkok Street Food</h6>
+                                    <small class="text-muted">February 28, 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-primary text-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Subscribe to Our Newsletter</h2>
+                    <p class="lead mb-4">Get the latest travel tips, destination guides, and exclusive offers straight to your inbox.</p>
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control form-control-lg" placeholder="Enter your email">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-light btn-lg w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>YaoCabu</h5>
+                    <p>Your premium travel partner providing unforgettable experiences and luxury accommodations worldwide.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="destinations.html" class="text-white">Destinations</a></li>
+                        <li><a href="packages.html" class="text-white">Travel Packages</a></li>
+                        <li><a href="blog.html" class="text-white">Travel Blog</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Travel Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="faq.html" class="text-white">FAQs</a></li>
+                        <li><a href="travel-tips.html" class="text-white">Travel Tips</a></li>
+                        <li><a href="travel-insurance.html" class="text-white">Travel Insurance</a></li>
+                        <li><a href="visa-information.html" class="text-white">Visa Information</a></li>
+                        <li><a href="cancellation-policy.html" class="text-white">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Adventure City</p>
+                        <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@yaocabu-travels.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 YaoCabu. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="terms.html" class="text-white me-3">Terms of Service</a>
+                    <a href="privacy.html" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 

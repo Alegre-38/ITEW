@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santorini - Wanderlust Travels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/destinations/santorini-header.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 12rem 0 8rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .attraction-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .attraction-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .attraction-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .weather-card {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .local-tips {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">Wanderlust Travels</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Santorini, Greece</h1>
+                    <p class="lead">The Jewel of the Aegean - Where Dreams Meet Reality</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="overview-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">About Santorini</h2>
+                    <p class="lead">Santorini is a stunning Greek island in the Aegean Sea, famous for its white-washed buildings, blue-domed churches, and breathtaking sunsets over the caldera.</p>
+                    <p>The island's unique landscape was formed by a volcanic eruption, creating dramatic cliffs and stunning beaches. Santorini is renowned for its luxury accommodations, world-class wineries, and romantic atmosphere.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="weather-card">
+                        <h3><i class="fas fa-sun me-2"></i>Weather</h3>
+                        <p>Santorini enjoys a Mediterranean climate with hot, dry summers and mild winters. The best time to visit is from May to October.</p>
+                        <div class="row text-center mt-3">
+                            <div class="col-4">
+                                <h4>25°C</h4>
+                                <small>Average Temp</small>
+                            </div>
+                            <div class="col-4">
+                                <h4>65%</h4>
+                                <small>Humidity</small>
+                            </div>
+                            <div class="col-4">
+                                <h4>14h</h4>
+                                <small>Daylight</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="attractions-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Top Attractions</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card">
+                        <img src="../../images/destinations/santorini-oia.jpg" class="card-img-top" alt="Oia Village">
+                        <div class="card-body">
+                            <h5 class="card-title">Oia Village</h5>
+                            <p class="card-text">Famous for its stunning sunsets, white-washed buildings, and blue-domed churches. The perfect place to experience authentic Greek island life.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card">
+                        <img src="../../images/destinations/santorini-red-beach.jpg" class="card-img-top" alt="Red Beach">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Beach</h5>
+                            <p class="card-text">One of Santorini's most famous beaches, known for its unique red volcanic sand and dramatic cliffs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card">
+                        <img src="../../images/destinations/santorini-akrotiri.jpg" class="card-img-top" alt="Ancient Akrotiri">
+                        <div class="card-body">
+                            <h5 class="card-title">Ancient Akrotiri</h5>
+                            <p class="card-text">A well-preserved prehistoric settlement that was buried under volcanic ash, often called the "Greek Pompeii".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Tips Section -->
+    <section class="local-tips-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Local Tips</h2>
+                    <div class="local-tips">
+                        <h4><i class="fas fa-utensils me-2"></i>Food & Drink</h4>
+                        <p>Try local specialties like fava, tomatokeftedes, and fresh seafood. Don't miss the famous Santorini wines, especially Assyrtiko white wine.</p>
+                    </div>
+                    <div class="local-tips">
+                        <h4><i class="fas fa-shopping-bag me-2"></i>Shopping</h4>
+                        <p>Look for handmade jewelry, local ceramics, and traditional Greek products. The main shopping areas are in Fira and Oia.</p>
+                    </div>
+                    <div class="local-tips">
+                        <h4><i class="fas fa-exclamation-circle me-2"></i>Cultural Etiquette</h4>
+                        <p>Dress modestly when visiting churches. Tipping is appreciated but not mandatory. Learn a few basic Greek phrases.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Best Time to Visit</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Peak Season (June - August)</h5>
+                            <p>Warmest weather, perfect for beach activities. Book accommodations well in advance.</p>
+                            <h5>Shoulder Season (April - May, September - October)</h5>
+                            <p>Pleasant temperatures, fewer crowds, and better prices. Ideal for sightseeing.</p>
+                            <h5>Off Season (November - March)</h5>
+                            <p>Quieter atmosphere, lower prices, but some businesses may be closed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Santorini Travel Packages</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card package-card">
+                        <img src="../../images/packages/santorini-romantic.jpg" class="card-img-top" alt="Santorini Romantic Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Romantic Escape</h5>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Santorini, Greece</p>
+                            <p class="package-duration"><i class="fas fa-calendar-alt me-2"></i>7 Days / 6 Nights</p>
+                            <p class="card-text">Experience the magic of Santorini with private sunset dinners, wine tasting, and luxury accommodations.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="package-price">$3,499</span><span class="text-muted">/person</span>
+                                </div>
+                                <a href="../packages.html" class="btn btn-outline-primary">View Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card package-card">
+                        <img src="../../images/packages/santorini-luxury.jpg" class="card-img-top" alt="Santorini Luxury Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Island Experience</h5>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Santorini, Greece</p>
+                            <p class="package-duration"><i class="fas fa-calendar-alt me-2"></i>10 Days / 9 Nights</p>
+                            <p class="card-text">Stay in a private villa with caldera views, enjoy exclusive tours, and indulge in gourmet dining experiences.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="package-price">$4,999</span><span class="text-muted">/person</span>
+                                </div>
+                                <a href="../packages.html" class="btn btn-outline-primary">View Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card package-card">
+                        <img src="../../images/packages/santorini-explorer.jpg" class="card-img-top" alt="Santorini Explorer Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Island Explorer</h5>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Santorini, Greece</p>
+                            <p class="package-duration"><i class="fas fa-calendar-alt me-2"></i>14 Days / 13 Nights</p>
+                            <p class="card-text">Discover hidden gems, visit ancient sites, and experience authentic Greek culture.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="package-price">$3,799</span><span class="text-muted">/person</span>
+                                </div>
+                                <a href="../packages.html" class="btn btn-outline-primary">View Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 bg-primary text-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Ready to Experience Santorini?</h2>
+                    <p class="lead mb-4">Contact us to customize your perfect Greek island getaway.</p>
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <a href="../contact.html" class="btn btn-light btn-lg me-3 mb-3">Contact Us</a>
+                        <a href="../packages.html" class="btn btn-outline-light btn-lg mb-3">View All Packages</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Wanderlust Travels</h5>
+                    <p>Your premium travel partner providing unforgettable experiences and luxury accommodations worldwide.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../about.html" class="text-white">About Us</a></li>
+                        <li><a href="../destinations.html" class="text-white">Destinations</a></li>
+                        <li><a href="../packages.html" class="text-white">Travel Packages</a></li>
+                        <li><a href="../blog.html" class="text-white">Travel Blog</a></li>
+                        <li><a href="../contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Travel Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../faq.html" class="text-white">FAQs</a></li>
+                        <li><a href="../travel-tips.html" class="text-white">Travel Tips</a></li>
+                        <li><a href="../travel-insurance.html" class="text-white">Travel Insurance</a></li>
+                        <li><a href="../visa-information.html" class="text-white">Visa Information</a></li>
+                        <li><a href="../cancellation-policy.html" class="text-white">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Adventure City</p>
+                        <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@wanderlust-travels.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 Wanderlust Travels. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="../terms.html" class="text-white me-3">Terms of Service</a>
+                    <a href="../privacy.html" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html> 

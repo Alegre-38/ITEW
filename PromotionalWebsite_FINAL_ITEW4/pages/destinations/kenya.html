@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya - YaoCabu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/destinations/kenya-header.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 12rem 0 8rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .attraction-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .attraction-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .attraction-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .weather-card {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .local-tips {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">YaoCabu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Kenya</h1>
+                    <p class="lead">The Heart of African Safari Adventure</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Discover Kenya</h2>
+                    <p>Kenya is a land of breathtaking landscapes, diverse wildlife, and rich cultural heritage. Home to the famous Maasai Mara National Reserve and the Great Migration, Kenya offers some of the most spectacular safari experiences in Africa.</p>
+                    <p>From the snow-capped peaks of Mount Kenya to the pristine beaches of the Indian Ocean, and from the vast savannahs to the bustling city of Nairobi, Kenya promises unforgettable adventures for nature lovers and culture enthusiasts alike.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="weather-card">
+                        <h3><i class="fas fa-sun me-2"></i>Best Time to Visit</h3>
+                        <p>The best time for wildlife viewing is during the dry seasons: January to March and July to October. The Great Migration typically occurs between July and October.</p>
+                        <p>Average Temperature: 20-30°C (68-86°F)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Must-See Attractions</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="attraction-card">
+                        <img src="../../images/destinations/kenya-safari.jpg" class="card-img-top" alt="Maasai Mara Safari">
+                        <div class="card-body">
+                            <h5 class="card-title">Maasai Mara Safari</h5>
+                            <p class="card-text">Experience the world-famous Great Migration and witness the Big Five in their natural habitat at this iconic wildlife reserve.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="attraction-card">
+                        <img src="../../images/destinations/kenya-beach.jpg" class="card-img-top" alt="Diani Beach">
+                        <div class="card-body">
+                            <h5 class="card-title">Diani Beach</h5>
+                            <p class="card-text">Relax on pristine white-sand beaches and enjoy water sports along Kenya's beautiful Indian Ocean coastline.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="attraction-card">
+                        <img src="../../images/destinations/kenya-culture.jpg" class="card-img-top" alt="Maasai Culture">
+                        <div class="card-body">
+                            <h5 class="card-title">Maasai Culture</h5>
+                            <p class="card-text">Immerse yourself in the rich traditions of the Maasai people, known for their distinctive customs and vibrant attire.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Tips Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="local-tips">
+                        <h3><i class="fas fa-lightbulb me-2"></i>Safari Tips</h3>
+                        <ul>
+                            <li>Book safaris with reputable operators</li>
+                            <li>Pack neutral-colored clothing</li>
+                            <li>Bring binoculars and a good camera</li>
+                            <li>Respect wildlife viewing distances</li>
+                            <li>Stay hydrated and use sunscreen</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="local-tips">
+                        <h3><i class="fas fa-utensils me-2"></i>Local Cuisine</h3>
+                        <p>Kenyan cuisine is a delicious blend of African, Indian, and European influences. Must-try dishes include:</p>
+                        <ul>
+                            <li>Nyama Choma (grilled meat)</li>
+                            <li>Ugali (maize meal)</li>
+                            <li>Sukuma Wiki (collard greens)</li>
+                            <li>Chapati (flatbread)</li>
+                            <li>Fresh tropical fruits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>YaoCabu</h5>
+                    <p>Your premium travel partner providing unforgettable experiences and luxury accommodations worldwide.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="../contact.html" class="btn btn-outline-light">Contact Us</a>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 YaoCabu. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="../terms.html" class="text-white me-3">Terms of Service</a>
+                    <a href="../privacy.html" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html> 

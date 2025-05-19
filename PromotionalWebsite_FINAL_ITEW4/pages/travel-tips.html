@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tips - Wanderlust Travels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .tips-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/travel-tips-header.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 12rem 0 8rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .tip-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .tip-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .tip-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #0d6efd;
+        }
+        
+        .checklist-item {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .checklist-item::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Wanderlust Travels</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="tips-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Travel Tips & Advice</h1>
+                    <p class="lead">Essential tips to make your journey smooth and enjoyable</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pre-Travel Tips -->
+    <section class="pre-travel-tips py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Pre-Travel Preparation</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-passport tip-icon"></i>
+                            <h4 class="card-title">Documents & Visas</h4>
+                            <ul class="list-unstyled">
+                                <li class="checklist-item">Check passport validity (6+ months)</li>
+                                <li class="checklist-item">Research visa requirements</li>
+                                <li class="checklist-item">Make copies of important documents</li>
+                                <li class="checklist-item">Store digital copies securely</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-suitcase tip-icon"></i>
+                            <h4 class="card-title">Packing Essentials</h4>
+                            <ul class="list-unstyled">
+                                <li class="checklist-item">Pack light and smart</li>
+                                <li class="checklist-item">Check baggage allowances</li>
+                                <li class="checklist-item">Include essential medications</li>
+                                <li class="checklist-item">Pack appropriate clothing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shield-alt tip-icon"></i>
+                            <h4 class="card-title">Health & Safety</h4>
+                            <ul class="list-unstyled">
+                                <li class="checklist-item">Get necessary vaccinations</li>
+                                <li class="checklist-item">Purchase travel insurance</li>
+                                <li class="checklist-item">Research local health facilities</li>
+                                <li class="checklist-item">Learn emergency numbers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- During Travel Tips -->
+    <section class="during-travel-tips py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">During Your Trip</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-money-bill-wave tip-icon"></i>
+                            <h4 class="card-title">Money Matters</h4>
+                            <ul class="list-unstyled">
+                                <li class="checklist-item">Notify your bank before travel</li>
+                                <li class="checklist-item">Carry multiple payment methods</li>
+                                <li class="checklist-item">Keep emergency cash separate</li>
+                                <li class="checklist-item">Be aware of exchange rates</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt tip-icon"></i>
+                            <h4 class="card-title">Navigation</h4>
+                            <ul class="list-unstyled">
+                                <li class="checklist-item">Download offline maps</li>
+                                <li class="checklist-item">Learn basic local phrases</li>
+                                <li class="checklist-item">Keep hotel address handy</li>
+                                <li class="checklist-item">Use reliable transportation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-camera tip-icon"></i>
+                            <h4 class="card-title">Cultural Etiquette</h4>
+                            <ul class="list-unstyled">
+                                <li class="checklist-item">Respect local customs</li>
+                                <li class="checklist-item">Dress appropriately</li>
+                                <li class="checklist-item">Ask before taking photos</li>
+                                <li class="checklist-item">Learn basic greetings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Tips -->
+    <section class="safety-tips py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Safety Tips</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card tip-card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Personal Safety</h4>
+                            <ul class="list-unstyled">
+                                <li class="checklist-item">Stay aware of your surroundings</li>
+                                <li class="checklist-item">Keep valuables secure and hidden</li>
+                                <li class="checklist-item">Avoid displaying expensive items</li>
+                                <li class="checklist-item">Use hotel safes when available</li>
+                                <li class="checklist-item">Travel in groups when possible</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card tip-card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Health & Hygiene</h4>
+                            <ul class="list-unstyled">
+                                <li class="checklist-item">Stay hydrated and eat safely</li>
+                                <li class="checklist-item">Carry hand sanitizer</li>
+                                <li class="checklist-item">Be cautious with street food</li>
+                                <li class="checklist-item">Protect against sun exposure</li>
+                                <li class="checklist-item">Know emergency medical contacts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Resources -->
+    <section class="additional-resources py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Additional Resources</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-info-circle tip-icon"></i>
+                            <h4 class="card-title">Travel Insurance</h4>
+                            <p class="card-text">Learn about our comprehensive travel insurance options and coverage details.</p>
+                            <a href="travel-insurance.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-file-alt tip-icon"></i>
+                            <h4 class="card-title">Visa Information</h4>
+                            <p class="card-text">Find detailed information about visa requirements for different destinations.</p>
+                            <a href="visa-information.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tip-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-question-circle tip-icon"></i>
+                            <h4 class="card-title">FAQs</h4>
+                            <p class="card-text">Get answers to common questions about travel planning and preparation.</p>
+                            <a href="faq.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Wanderlust Travels</h5>
+                    <p>Your premium travel partner providing unforgettable experiences and luxury accommodations worldwide.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="destinations.html" class="text-white">Destinations</a></li>
+                        <li><a href="packages.html" class="text-white">Travel Packages</a></li>
+                        <li><a href="blog.html" class="text-white">Travel Blog</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Travel Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="faq.html" class="text-white">FAQs</a></li>
+                        <li><a href="travel-tips.html" class="text-white">Travel Tips</a></li>
+                        <li><a href="travel-insurance.html" class="text-white">Travel Insurance</a></li>
+                        <li><a href="visa-information.html" class="text-white">Visa Information</a></li>
+                        <li><a href="cancellation-policy.html" class="text-white">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Adventure City</p>
+                        <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@wanderlust-travels.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 Wanderlust Travels. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="terms.html" class="text-white me-3">Terms of Service</a>
+                    <a href="privacy.html" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 

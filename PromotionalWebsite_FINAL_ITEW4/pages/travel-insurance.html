@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Insurance - Wanderlust Travels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .insurance-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/insurance-header.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 12rem 0 8rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .coverage-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .coverage-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .coverage-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #0d6efd;
+        }
+        
+        .benefit-item {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .benefit-item::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #0d6efd;
+        }
+        
+        .quote-form {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .coverage-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #0d6efd;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Wanderlust Travels</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="insurance-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Travel Insurance</h1>
+                    <p class="lead">Protect your journey with comprehensive travel insurance coverage</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Coverage Options -->
+    <section class="coverage-options py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Insurance Plans</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card coverage-card h-100">
+                        <div class="coverage-badge">Basic</div>
+                        <div class="card-body text-center">
+                            <i class="fas fa-shield-alt coverage-icon"></i>
+                            <h4 class="card-title">Basic Coverage</h4>
+                            <p class="card-text">Essential protection for your trip</p>
+                            <h3 class="mb-4">$49</h3>
+                            <ul class="list-unstyled">
+                                <li class="benefit-item">Trip Cancellation</li>
+                                <li class="benefit-item">Emergency Medical</li>
+                                <li class="benefit-item">Baggage Protection</li>
+                                <li class="benefit-item">24/7 Assistance</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card coverage-card h-100">
+                        <div class="coverage-badge">Popular</div>
+                        <div class="card-body text-center">
+                            <i class="fas fa-star coverage-icon"></i>
+                            <h4 class="card-title">Premium Coverage</h4>
+                            <p class="card-text">Enhanced protection for peace of mind</p>
+                            <h3 class="mb-4">$99</h3>
+                            <ul class="list-unstyled">
+                                <li class="benefit-item">All Basic Coverage</li>
+                                <li class="benefit-item">Trip Interruption</li>
+                                <li class="benefit-item">Medical Evacuation</li>
+                                <li class="benefit-item">Rental Car Protection</li>
+                                <li class="benefit-item">Adventure Sports</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card coverage-card h-100">
+                        <div class="coverage-badge">Comprehensive</div>
+                        <div class="card-body text-center">
+                            <i class="fas fa-globe coverage-icon"></i>
+                            <h4 class="card-title">Global Coverage</h4>
+                            <p class="card-text">Complete protection for frequent travelers</p>
+                            <h3 class="mb-4">$199</h3>
+                            <ul class="list-unstyled">
+                                <li class="benefit-item">All Premium Coverage</li>
+                                <li class="benefit-item">Annual Multi-Trip</li>
+                                <li class="benefit-item">Business Travel</li>
+                                <li class="benefit-item">High-Value Items</li>
+                                <li class="benefit-item">Cancel for Any Reason</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Details -->
+    <section class="coverage-details py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">What's Covered</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card coverage-card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Medical Coverage</h4>
+                            <ul class="list-unstyled">
+                                <li class="benefit-item">Emergency medical expenses</li>
+                                <li class="benefit-item">Hospitalization costs</li>
+                                <li class="benefit-item">Emergency dental treatment</li>
+                                <li class="benefit-item">Medical evacuation</li>
+                                <li class="benefit-item">Repatriation of remains</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card coverage-card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Trip Protection</h4>
+                            <ul class="list-unstyled">
+                                <li class="benefit-item">Trip cancellation</li>
+                                <li class="benefit-item">Trip interruption</li>
+                                <li class="benefit-item">Travel delay coverage</li>
+                                <li class="benefit-item">Missed connection</li>
+                                <li class="benefit-item">Cancel for any reason (CFAR)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card coverage-card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Baggage & Personal Items</h4>
+                            <ul class="list-unstyled">
+                                <li class="benefit-item">Lost or delayed baggage</li>
+                                <li class="benefit-item">Personal item protection</li>
+                                <li class="benefit-item">Baggage delay expenses</li>
+                                <li class="benefit-item">High-value item coverage</li>
+                                <li class="benefit-item">Theft protection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card coverage-card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Additional Benefits</h4>
+                            <ul class="list-unstyled">
+                                <li class="benefit-item">24/7 emergency assistance</li>
+                                <li class="benefit-item">Legal assistance</li>
+                                <li class="benefit-item">Rental car protection</li>
+                                <li class="benefit-item">Adventure sports coverage</li>
+                                <li class="benefit-item">Identity theft protection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section class="quote-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="quote-form">
+                        <h2 class="text-center mb-4">Get a Free Quote</h2>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="coverage" class="form-label">Coverage Type</label>
+                                    <select class="form-select" id="coverage" required>
+                                        <option value="">Select Coverage</option>
+                                        <option value="basic">Basic Coverage</option>
+                                        <option value="premium">Premium Coverage</option>
+                                        <option value="global">Global Coverage</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="departure" class="form-label">Departure Date</label>
+                                    <input type="date" class="form-control" id="departure" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="return" class="form-label">Return Date</label>
+                                    <input type="date" class="form-control" id="return" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Additional Information</label>
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Get Quote</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="insuranceFAQ">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    When should I purchase travel insurance?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#insuranceFAQ">
+                                <div class="accordion-body">
+                                    It's best to purchase travel insurance as soon as you book your trip. This ensures you're covered for any unexpected events that might occur before your departure, such as trip cancellation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    What is not covered by travel insurance?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#insuranceFAQ">
+                                <div class="accordion-body">
+                                    Common exclusions include pre-existing medical conditions (unless declared), extreme sports (unless specified), and losses due to war or civil unrest. Please review the policy details for complete information.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    How do I make a claim?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#insuranceFAQ">
+                                <div class="accordion-body">
+                                    Claims can be made online through our portal or by contacting our 24/7 claims hotline. You'll need to provide documentation such as receipts, medical reports, or police reports depending on the type of claim.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Wanderlust Travels</h5>
+                    <p>Your premium travel partner providing unforgettable experiences and luxury accommodations worldwide.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="destinations.html" class="text-white">Destinations</a></li>
+                        <li><a href="packages.html" class="text-white">Travel Packages</a></li>
+                        <li><a href="blog.html" class="text-white">Travel Blog</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Travel Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="faq.html" class="text-white">FAQs</a></li>
+                        <li><a href="travel-tips.html" class="text-white">Travel Tips</a></li>
+                        <li><a href="travel-insurance.html" class="text-white">Travel Insurance</a></li>
+                        <li><a href="visa-information.html" class="text-white">Visa Information</a></li>
+                        <li><a href="cancellation-policy.html" class="text-white">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Adventure City</p>
+                        <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@wanderlust-travels.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 Wanderlust Travels. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="terms.html" class="text-white me-3">Terms of Service</a>
+                    <a href="privacy.html" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 

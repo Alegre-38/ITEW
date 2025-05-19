@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan - YaoCabu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/destinations/japan-header.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 12rem 0 8rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .attraction-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .attraction-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .attraction-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .weather-card {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .local-tips {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">YaoCabu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Japan</h1>
+                    <p class="lead">Where Tradition Meets Innovation</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Discover Japan</h2>
+                    <p>Japan is a fascinating blend of ancient traditions and cutting-edge technology. From the serene temples of Kyoto to the neon lights of Tokyo, this island nation offers a unique cultural experience that captivates every visitor.</p>
+                    <p>Experience the perfect harmony of old and new, where centuries-old tea ceremonies coexist with bullet trains, and where cherry blossoms bloom alongside skyscrapers. Japan's rich history, exquisite cuisine, and warm hospitality make it a must-visit destination.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="weather-card">
+                        <h3><i class="fas fa-calendar-alt me-2"></i>Best Time to Visit</h3>
+                        <p>The best time to visit Japan is during spring (March to May) for cherry blossoms or autumn (September to November) for colorful foliage. These seasons offer pleasant weather and stunning natural beauty.</p>
+                        <p>Average Temperature: 15-25°C (59-77°F)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Must-See Attractions</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="attraction-card">
+                        <img src="../../images/destinations/japan-temple.jpg" class="card-img-top" alt="Ancient Temples">
+                        <div class="card-body">
+                            <h5 class="card-title">Ancient Temples</h5>
+                            <p class="card-text">Explore Kyoto's historic temples and shrines, including the golden Kinkaku-ji and the serene Fushimi Inari Shrine with its famous torii gates.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="attraction-card">
+                        <img src="../../images/destinations/japan-cherry.jpg" class="card-img-top" alt="Cherry Blossoms">
+                        <div class="card-body">
+                            <h5 class="card-title">Cherry Blossoms</h5>
+                            <p class="card-text">Witness the magical sakura season, when Japan's parks and streets are transformed by delicate pink blossoms, creating unforgettable scenery.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="attraction-card">
+                        <img src="../../images/destinations/japan-food.jpg" class="card-img-top" alt="Culinary Delights">
+                        <div class="card-body">
+                            <h5 class="card-title">Culinary Delights</h5>
+                            <p class="card-text">Experience Japan's world-renowned cuisine, from sushi and ramen to traditional kaiseki meals and street food in bustling markets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Tips Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="local-tips">
+                        <h3><i class="fas fa-lightbulb me-2"></i>Local Tips</h3>
+                        <ul>
+                            <li>Learn basic Japanese phrases and customs</li>
+                            <li>Remove shoes when entering traditional buildings</li>
+                            <li>Use public transportation (it's efficient and clean)</li>
+                            <li>Carry cash as some places don't accept cards</li>
+                            <li>Respect quiet zones on public transport</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="local-tips">
+                        <h3><i class="fas fa-utensils me-2"></i>Local Cuisine</h3>
+                        <p>Japanese cuisine is renowned worldwide for its quality and presentation. Must-try dishes include:</p>
+                        <ul>
+                            <li>Sushi and Sashimi</li>
+                            <li>Ramen and Udon noodles</li>
+                            <li>Tempura (battered and fried seafood/vegetables)</li>
+                            <li>Okonomiyaki (savory pancakes)</li>
+                            <li>Matcha tea and wagashi (traditional sweets)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>YaoCabu</h5>
+                    <p>Your premium travel partner providing unforgettable experiences and luxury accommodations worldwide.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="../contact.html" class="btn btn-outline-light">Contact Us</a>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 YaoCabu. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="../terms.html" class="text-white me-3">Terms of Service</a>
+                    <a href="../privacy.html" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html> 

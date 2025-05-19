@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaoCabu - Luxury Hotels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hotels-header.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 12rem 0 8rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .hotel-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .hotel-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .hotel-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .hotel-rating {
+            color: #f39c12;
+        }
+        
+        .hotel-price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #3498db;
+        }
+        
+        .hotel-features {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .hotel-features li {
+            margin-bottom: 5px;
+        }
+        
+        .filter-section {
+            padding: 2rem 0;
+            background-color: #f8f9fa;
+        }
+        
+        .filter-btn {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">YaoCabu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Luxury Accommodations</h1>
+                    <p class="lead">Experience comfort and elegance at our carefully selected premier hotels worldwide</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-title">Find Your Perfect Stay</h2>
+                    <div class="filter-buttons mt-4">
+                        <button class="btn btn-outline-primary filter-btn active" data-filter="all">All Hotels</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="luxury">Luxury</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="boutique">Boutique</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="resort">Resort</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="beachfront">Beachfront</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="city-center">City Center</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotels Section -->
+    <section class="hotels-section py-5">
+        <div class="container">
+            <div class="row hotel-grid">
+                <!-- Luxury Hotels -->
+                <div class="col-lg-4 col-md-6 hotel-item luxury beachfront">
+                    <div class="card hotel-card">
+                        <img src="../images/hotels/maldives-resort.jpg" class="card-img-top" alt="Maldives Resort">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Azure Paradise Resort</h5>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Maldives</p>
+                            <p class="card-text">Luxurious overwater villas with direct ocean access and stunning sunset views. Experience paradise at its finest.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="hotel-price">$750</span><span class="text-muted">/night</span>
+                                </div>
+                                <a href="destinations/azure-paradise.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 hotel-item luxury city-center">
+                    <div class="card hotel-card">
+                        <img src="../images/hotels/paris-hotel.jpg" class="card-img-top" alt="Paris Hotel">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Grand Palais Hotel</h5>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Paris, France</p>
+                            <p class="card-text">Elegant luxury hotel in the heart of Paris with Eiffel Tower views and classical French architecture.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="hotel-price">$550</span><span class="text-muted">/night</span>
+                                </div>
+                                <a href="destinations/grand-palais.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boutique Hotels -->
+                <div class="col-lg-4 col-md-6 hotel-item boutique city-center">
+                    <div class="card hotel-card">
+                        <img src="../images/hotels/kyoto-ryokan.jpg" class="card-img-top" alt="Kyoto Ryokan">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Sakura Ryokan</h5>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Kyoto, Japan</p>
+                            <p class="card-text">Traditional Japanese ryokan with modern amenities, private gardens, and authentic onsen experience.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="hotel-price">$420</span><span class="text-muted">/night</span>
+                                </div>
+                                <a href="destinations/sakura-ryokan.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 hotel-item boutique">
+                    <div class="card hotel-card">
+                        <img src="../images/hotels/santorini-boutique.jpg" class="card-img-top" alt="Santorini Boutique">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Aegean Infinity Suites</h5>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Santorini, Greece</p>
+                            <p class="card-text">Intimate boutique hotel with private infinity pools and breathtaking caldera views. Perfect for couples.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="hotel-price">$480</span><span class="text-muted">/night</span>
+                                </div>
+                                <a href="destinations/aegean-infinity.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resorts -->
+                <div class="col-lg-4 col-md-6 hotel-item resort beachfront">
+                    <div class="card hotel-card">
+                        <img src="../images/hotels/bali-resort.jpg" class="card-img-top" alt="Bali Resort">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Tropical Haven Resort & Spa</h5>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Bali, Indonesia</p>
+                            <p class="card-text">Beachfront resort with private villas, surrounded by lush gardens and offering world-class spa services.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="hotel-price">$380</span><span class="text-muted">/night</span>
+                                </div>
+                                <a href="destinations/tropical-haven.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 hotel-item resort">
+                    <div class="card hotel-card">
+                        <img src="../images/hotels/swiss-alpine.jpg" class="card-img-top" alt="Swiss Alpine">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Alpine Luxe Lodge</h5>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Swiss Alps</p>
+                            <p class="card-text">Mountain luxury lodge with ski-in/ski-out access, thermal spas, and gourmet dining with panoramic views.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="hotel-price">$620</span><span class="text-muted">/night</span>
+                                </div>
+                                <a href="destinations/alpine-luxe.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- City Hotels -->
+                <div class="col-lg-4 col-md-6 hotel-item city-center">
+                    <div class="card hotel-card">
+                        <img src="../images/hotels/nyc-hotel.jpg" class="card-img-top" alt="NYC Hotel">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Metropolitan Skyline Hotel</h5>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>New York, USA</p>
+                            <p class="card-text">Contemporary luxury in the heart of Manhattan with skyline views, a rooftop bar, and premium amenities.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="hotel-price">$520</span><span class="text-muted">/night</span>
+                                </div>
+                                <a href="destinations/new-york.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 hotel-item beachfront">
+                    <div class="card hotel-card">
+                        <img src="../images/hotels/cancun-resort.jpg" class="card-img-top" alt="Cancun Resort">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Caribbean Blue Resort</h5>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Cancun, Mexico</p>
+                            <p class="card-text">All-inclusive beachfront paradise with pristine white sands, multiple pools, and vibrant entertainment options.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="hotel-price">$350</span><span class="text-muted">/night</span>
+                                </div>
+                                <a href="destinations/caribbean-blue.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 hotel-item city-center">
+                    <div class="card hotel-card">
+                        <img src="../images/hotels/dubai-luxury.jpg" class="card-img-top" alt="Dubai Luxury">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Golden Oasis Palace</h5>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Dubai, UAE</p>
+                            <p class="card-text">Opulent luxury in the heart of Dubai with gold-accented interiors, private butlers, and extravagant amenities.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="hotel-price">$780</span><span class="text-muted">/night</span>
+                                </div>
+                                <a href="destinations/golden-oasis.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities-section py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title">Premium Amenities</h2>
+                    <p class="section-subtitle">Luxurious features available at our partner hotels</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-swimming-pool text-primary mb-3" style="font-size: 2.5rem;"></i>
+                            <h4>Infinity Pools</h4>
+                            <p>Enjoy breathtaking views from stunning infinity pools that blend seamlessly with the horizon.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-spa text-primary mb-3" style="font-size: 2.5rem;"></i>
+                            <h4>Luxury Spas</h4>
+                            <p>Indulge in rejuvenating treatments and wellness programs at world-class spa facilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-utensils text-primary mb-3" style="font-size: 2.5rem;"></i>
+                            <h4>Gourmet Dining</h4>
+                            <p>Savor exquisite cuisine prepared by renowned chefs using the finest local ingredients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-concierge-bell text-primary mb-3" style="font-size: 2.5rem;"></i>
+                            <h4>24/7 Concierge</h4>
+                            <p>Personalized service from dedicated staff to ensure your every need is met promptly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-dumbbell text-primary mb-3" style="font-size: 2.5rem;"></i>
+                            <h4>Fitness Centers</h4>
+                            <p>State-of-the-art fitness facilities with personal trainers and wellness programs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-glass-cheers text-primary mb-3" style="font-size: 2.5rem;"></i>
+                            <h4>Exclusive Experiences</h4>
+                            <p>Unique activities and private events available only to hotel guests.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 bg-primary text-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Ready to Experience Luxury?</h2>
+                    <p class="lead mb-4">Book your stay at one of our premium partner hotels for an unforgettable experience.</p>
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <a href="contact.html" class="btn btn-light btn-lg me-3 mb-3">Contact Us</a>
+                        <a href="packages.html" class="btn btn-outline-light btn-lg mb-3">View Packages</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>YaoCabu</h5>
+                    <p>Your premium travel partner providing unforgettable experiences and luxury accommodations worldwide.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="destinations.html" class="text-white">Destinations</a></li>
+                        <li><a href="packages.html" class="text-white">Travel Packages</a></li>
+                        <li><a href="blog.html" class="text-white">Travel Blog</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Travel Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="faq.html" class="text-white">FAQs</a></li>
+                        <li><a href="travel-tips.html" class="text-white">Travel Tips</a></li>
+                        <li><a href="travel-insurance.html" class="text-white">Travel Insurance</a></li>
+                        <li><a href="visa-information.html" class="text-white">Visa Information</a></li>
+                        <li><a href="cancellation-policy.html" class="text-white">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Adventure City</p>
+                        <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@yaocabu-travels.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 YaoCabu. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="terms.html" class="text-white me-3">Terms of Service</a>
+                    <a href="privacy.html" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Hotel filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const hotels = document.querySelectorAll('.hotel-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to current button
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    hotels.forEach(item => {
+                        if (filter === 'all' || item.classList.contains(filter)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

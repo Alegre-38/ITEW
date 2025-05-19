@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Palais Hotel - YaoCabu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/hotels/paris-hotel.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 12rem 0 8rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .hotel-feature {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .hotel-feature:hover {
+            transform: translateY(-10px);
+        }
+        
+        .hotel-feature img {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .amenity-icon {
+            font-size: 2rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+        
+        .room-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .room-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">YaoCabu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Grand Palais Hotel</h1>
+                    <p class="lead">Experience Parisian Elegance in the Heart of the City</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Welcome to Grand Palais</h2>
+                    <p>Nestled in the heart of Paris, just steps away from the iconic Eiffel Tower, Grand Palais Hotel embodies the essence of French luxury and sophistication. Our historic building, dating back to the 19th century, has been meticulously restored to offer modern comforts while preserving its classical Parisian charm.</p>
+                    <p>With breathtaking views of the Eiffel Tower, elegant interiors, and world-class service, Grand Palais Hotel provides an unforgettable experience in the City of Light.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-primary text-white p-4">
+                        <h3><i class="fas fa-info-circle me-2"></i>Hotel Information</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-map-marker-alt me-2"></i>Paris, France</li>
+                            <li><i class="fas fa-star me-2"></i>5-Star Luxury Hotel</li>
+                            <li><i class="fas fa-bed me-2"></i>150 Rooms & Suites</li>
+                            <li><i class="fas fa-utensils me-2"></i>3 Restaurants & Bars</li>
+                            <li><i class="fas fa-spa me-2"></i>Luxury Spa & Wellness</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodations Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Luxury Accommodations</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="../../images/hotels/paris-suite.jpg" class="card-img-top" alt="Classic Suite">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Suite</h5>
+                            <p class="card-text">Elegant suite with Eiffel Tower views and classic Parisian decor.</p>
+                            <p class="text-primary">From $550/night</p>
+                            <a href="../contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="../../images/hotels/paris-luxury-suite.jpg" class="card-img-top" alt="Eiffel Suite">
+                        <div class="card-body">
+                            <h5 class="card-title">Eiffel Suite</h5>
+                            <p class="card-text">Spacious suite with private balcony and panoramic tower views.</p>
+                            <p class="text-primary">From $850/night</p>
+                            <a href="../contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="../../images/hotels/paris-penthouse.jpg" class="card-img-top" alt="Presidential Suite">
+                        <div class="card-body">
+                            <h5 class="card-title">Presidential Suite</h5>
+                            <p class="card-text">Luxurious suite with private terrace, living room, and butler service.</p>
+                            <p class="text-primary">From $1,500/night</p>
+                            <a href="../contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Hotel Features</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-utensils amenity-icon"></i>
+                            <h4>Gourmet Dining</h4>
+                            <p>Three Michelin-starred restaurants offering French and international cuisine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-spa amenity-icon"></i>
+                            <h4>Luxury Spa</h4>
+                            <p>World-class spa with French beauty treatments and wellness programs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-concierge-bell amenity-icon"></i>
+                            <h4>Personal Concierge</h4>
+                            <p>Dedicated concierge service to arrange your perfect Parisian experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Hotel Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="hotel-feature">
+                        <img src="../../images/hotels/paris-lobby.jpg" class="card-img-top" alt="Grand Lobby">
+                        <div class="card-body">
+                            <h5>Grand Lobby</h5>
+                            <p>Elegant lobby with crystal chandeliers and marble floors</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="hotel-feature">
+                        <img src="../../images/hotels/paris-restaurant.jpg" class="card-img-top" alt="Fine Dining">
+                        <div class="card-body">
+                            <h5>Fine Dining</h5>
+                            <p>Michelin-starred restaurant with Eiffel Tower views</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="hotel-feature">
+                        <img src="../../images/hotels/paris-spa.jpg" class="card-img-top" alt="Luxury Spa">
+                        <div class="card-body">
+                            <h5>Luxury Spa</h5>
+                            <p>Relaxing spa with traditional French treatments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Ready for Parisian Luxury?</h2>
+                    <p class="lead mb-4">Book your stay at Grand Palais Hotel for an unforgettable Parisian experience.</p>
+                    <a href="../contact.html" class="btn btn-light btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>YaoCabu</h5>
+                    <p>Your premium travel partner providing unforgettable experiences and luxury accommodations worldwide.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="../contact.html" class="btn btn-outline-light">Contact Us</a>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 YaoCabu. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="../terms.html" class="text-white me-3">Terms of Service</a>
+                    <a href="../privacy.html" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html> 

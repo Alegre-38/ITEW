@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Oasis Palace - YaoCabu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/hotels/dubai-luxury.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 12rem 0 8rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .hotel-feature {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .hotel-feature:hover {
+            transform: translateY(-10px);
+        }
+        
+        .hotel-feature img {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .amenity-icon {
+            font-size: 2rem;
+            color: #f39c12;
+            margin-bottom: 1rem;
+        }
+        
+        .room-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .room-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">YaoCabu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Golden Oasis Palace</h1>
+                    <p class="lead">Experience Unparalleled Luxury in the Heart of Dubai</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Welcome to Golden Oasis Palace</h2>
+                    <p>Rising majestically in the heart of Dubai, Golden Oasis Palace redefines luxury with its opulent design and world-class amenities. Our 5-star hotel combines traditional Arabian hospitality with modern sophistication, creating an unforgettable experience for our discerning guests.</p>
+                    <p>From gold-accented interiors to private butler service, every detail at Golden Oasis Palace has been carefully crafted to provide the ultimate in luxury and comfort. Enjoy breathtaking views of the city skyline, indulge in gourmet dining, and experience the epitome of Arabian hospitality.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-warning text-white p-4">
+                        <h3><i class="fas fa-info-circle me-2"></i>Hotel Information</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-map-marker-alt me-2"></i>Downtown Dubai, UAE</li>
+                            <li><i class="fas fa-star me-2"></i>5-Star Luxury Hotel</li>
+                            <li><i class="fas fa-bed me-2"></i>400 Rooms & Suites</li>
+                            <li><i class="fas fa-swimming-pool me-2"></i>3 Swimming Pools</li>
+                            <li><i class="fas fa-utensils me-2"></i>5 Restaurants & Bars</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodations Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Luxury Accommodations</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="../../images/hotels/dubai-suite.jpg" class="card-img-top" alt="Deluxe Suite">
+                        <div class="card-body">
+                            <h5 class="card-title">Deluxe Suite</h5>
+                            <p class="card-text">Elegant suite with city views, gold-accented decor, and premium amenities.</p>
+                            <p class="text-warning">From $780/night</p>
+                            <a href="../contact.html" class="btn btn-warning">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="../../images/hotels/dubai-luxury-suite.jpg" class="card-img-top" alt="Royal Suite">
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Suite</h5>
+                            <p class="card-text">Spacious suite with panoramic views, private dining area, and butler service.</p>
+                            <p class="text-warning">From $1,200/night</p>
+                            <a href="../contact.html" class="btn btn-warning">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="../../images/hotels/dubai-penthouse.jpg" class="card-img-top" alt="Presidential Suite">
+                        <div class="card-body">
+                            <h5 class="card-title">Presidential Suite</h5>
+                            <p class="card-text">Luxurious penthouse with private terrace, spa, and 24/7 butler service.</p>
+                            <p class="text-warning">From $2,500/night</p>
+                            <a href="../contact.html" class="btn btn-warning">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Hotel Features</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-concierge-bell amenity-icon"></i>
+                            <h4>Personal Butler</h4>
+                            <p>Dedicated butler service available 24/7 for all your needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-spa amenity-icon"></i>
+                            <h4>Luxury Spa</h4>
+                            <p>World-class spa with traditional Arabian treatments and modern therapies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-utensils amenity-icon"></i>
+                            <h4>Gourmet Dining</h4>
+                            <p>Five award-winning restaurants offering international and local cuisine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Hotel Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="hotel-feature">
+                        <img src="../../images/hotels/dubai-lobby.jpg" class="card-img-top" alt="Grand Lobby">
+                        <div class="card-body">
+                            <h5>Grand Lobby</h5>
+                            <p>Opulent lobby with gold-accented decor and crystal chandeliers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="hotel-feature">
+                        <img src="../../images/hotels/dubai-pool.jpg" class="card-img-top" alt="Infinity Pool">
+                        <div class="card-body">
+                            <h5>Infinity Pool</h5>
+                            <p>Stunning rooftop pool with panoramic city views</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="hotel-feature">
+                        <img src="../../images/hotels/dubai-restaurant.jpg" class="card-img-top" alt="Fine Dining">
+                        <div class="card-body">
+                            <h5>Fine Dining</h5>
+                            <p>Michelin-starred restaurant with city skyline views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-warning text-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Ready for Dubai Luxury?</h2>
+                    <p class="lead mb-4">Book your stay at Golden Oasis Palace for an unforgettable experience.</p>
+                    <a href="../contact.html" class="btn btn-light btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>YaoCabu</h5>
+                    <p>Your premium travel partner providing unforgettable experiences and luxury accommodations worldwide.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="../contact.html" class="btn btn-outline-light">Contact Us</a>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 YaoCabu. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="../terms.html" class="text-white me-3">Terms of Service</a>
+                    <a href="../privacy.html" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html> 

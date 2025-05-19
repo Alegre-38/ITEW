@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo - Wanderlust Travels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/destinations/tokyo-header.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 12rem 0 8rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .attraction-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .attraction-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .attraction-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .weather-card {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .local-tips {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">Wanderlust Travels</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Tokyo, Japan</h1>
+                    <p class="lead">Where Tradition Meets Innovation - A City of Endless Discovery</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="overview-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">About Tokyo</h2>
+                    <p class="lead">Tokyo is a vibrant metropolis that seamlessly blends ancient traditions with cutting-edge technology, offering visitors a unique cultural experience.</p>
+                    <p>From historic temples and gardens to futuristic skyscrapers and neon-lit streets, Tokyo is a city of contrasts. Experience world-class cuisine, shopping, and entertainment while immersing yourself in Japanese culture.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="weather-card">
+                        <h3><i class="fas fa-sun me-2"></i>Weather</h3>
+                        <p>Tokyo has four distinct seasons. Spring (March-May) and autumn (September-November) are the most pleasant times to visit.</p>
+                        <div class="row text-center mt-3">
+                            <div class="col-4">
+                                <h4>18°C</h4>
+                                <small>Average Temp</small>
+                            </div>
+                            <div class="col-4">
+                                <h4>60%</h4>
+                                <small>Humidity</small>
+                            </div>
+                            <div class="col-4">
+                                <h4>12h</h4>
+                                <small>Daylight</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="attractions-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Top Attractions</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card">
+                        <img src="../../images/destinations/tokyo-shibuya.jpg" class="card-img-top" alt="Shibuya Crossing">
+                        <div class="card-body">
+                            <h5 class="card-title">Shibuya Crossing</h5>
+                            <p class="card-text">The world's busiest pedestrian crossing, surrounded by neon signs and giant video screens. A perfect spot to experience Tokyo's energy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card">
+                        <img src="../../images/destinations/tokyo-sensoji.jpg" class="card-img-top" alt="Senso-ji Temple">
+                        <div class="card-body">
+                            <h5 class="card-title">Senso-ji Temple</h5>
+                            <p class="card-text">Tokyo's oldest temple, located in Asakusa. Experience traditional Japanese culture and shop for souvenirs in Nakamise-dori.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card">
+                        <img src="../../images/destinations/tokyo-shinjuku.jpg" class="card-img-top" alt="Shinjuku Gyoen">
+                        <div class="card-body">
+                            <h5 class="card-title">Shinjuku Gyoen</h5>
+                            <p class="card-text">A beautiful park featuring traditional Japanese, English, and French gardens. Perfect for cherry blossom viewing in spring.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Tips Section -->
+    <section class="local-tips-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Local Tips</h2>
+                    <div class="local-tips">
+                        <h4><i class="fas fa-utensils me-2"></i>Food & Drink</h4>
+                        <p>Try authentic sushi, ramen, and tempura. Visit local izakayas for drinks and small plates. Don't miss the famous Tsukiji fish market.</p>
+                    </div>
+                    <div class="local-tips">
+                        <h4><i class="fas fa-shopping-bag me-2"></i>Shopping</h4>
+                        <p>Explore Akihabara for electronics, Harajuku for fashion, and Ginza for luxury brands. Visit department stores for unique souvenirs.</p>
+                    </div>
+                    <div class="local-tips">
+                        <h4><i class="fas fa-exclamation-circle me-2"></i>Cultural Etiquette</h4>
+                        <p>Remove shoes when entering homes and some restaurants. Learn basic Japanese phrases. Carry cash as some places don't accept cards.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Best Time to Visit</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Spring (March - May)</h5>
+                            <p>Cherry blossom season, mild temperatures, and perfect for outdoor activities.</p>
+                            <h5>Autumn (September - November)</h5>
+                            <p>Pleasant weather, beautiful fall colors, and fewer crowds than spring.</p>
+                            <h5>Winter (December - February)</h5>
+                            <p>Cool temperatures, holiday illuminations, and great for indoor activities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Tokyo Travel Packages</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card package-card">
+                        <img src="../../images/packages/tokyo-culture.jpg" class="card-img-top" alt="Tokyo Cultural Experience">
+                        <div class="card-body">
+                            <h5 class="card-title">Cultural Experience</h5>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Tokyo, Japan</p>
+                            <p class="package-duration"><i class="fas fa-calendar-alt me-2"></i>7 Days / 6 Nights</p>
+                            <p class="card-text">Immerse yourself in Japanese culture with tea ceremonies, temple visits, and traditional performances.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="package-price">$3,299</span><span class="text-muted">/person</span>
+                                </div>
+                                <a href="../packages.html" class="btn btn-outline-primary">View Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card package-card">
+                        <img src="../../images/packages/tokyo-modern.jpg" class="card-img-top" alt="Tokyo Modern Experience">
+                        <div class="card-body">
+                            <h5 class="card-title">Modern Tokyo</h5>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Tokyo, Japan</p>
+                            <p class="package-duration"><i class="fas fa-calendar-alt me-2"></i>5 Days / 4 Nights</p>
+                            <p class="card-text">Experience Tokyo's cutting-edge technology, fashion, and entertainment in this fast-paced adventure.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="package-price">$2,799</span><span class="text-muted">/person</span>
+                                </div>
+                                <a href="../packages.html" class="btn btn-outline-primary">View Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card package-card">
+                        <img src="../../images/packages/tokyo-food.jpg" class="card-img-top" alt="Tokyo Food Tour">
+                        <div class="card-body">
+                            <h5 class="card-title">Food Lover's Tour</h5>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Tokyo, Japan</p>
+                            <p class="package-duration"><i class="fas fa-calendar-alt me-2"></i>4 Days / 3 Nights</p>
+                            <p class="card-text">Discover Tokyo's culinary scene with guided food tours, cooking classes, and exclusive dining experiences.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="package-price">$2,499</span><span class="text-muted">/person</span>
+                                </div>
+                                <a href="../packages.html" class="btn btn-outline-primary">View Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 bg-primary text-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Ready to Experience Tokyo?</h2>
+                    <p class="lead mb-4">Contact us to customize your perfect Japanese adventure.</p>
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <a href="../contact.html" class="btn btn-light btn-lg me-3 mb-3">Contact Us</a>
+                        <a href="../packages.html" class="btn btn-outline-light btn-lg mb-3">View All Packages</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Wanderlust Travels</h5>
+                    <p>Your premium travel partner providing unforgettable experiences and luxury accommodations worldwide.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../about.html" class="text-white">About Us</a></li>
+                        <li><a href="../destinations.html" class="text-white">Destinations</a></li>
+                        <li><a href="../packages.html" class="text-white">Travel Packages</a></li>
+                        <li><a href="../blog.html" class="text-white">Travel Blog</a></li>
+                        <li><a href="../contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Travel Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../faq.html" class="text-white">FAQs</a></li>
+                        <li><a href="../travel-tips.html" class="text-white">Travel Tips</a></li>
+                        <li><a href="../travel-insurance.html" class="text-white">Travel Insurance</a></li>
+                        <li><a href="../visa-information.html" class="text-white">Visa Information</a></li>
+                        <li><a href="../cancellation-policy.html" class="text-white">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Adventure City</p>
+                        <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@wanderlust-travels.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 Wanderlust Travels. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="../terms.html" class="text-white me-3">Terms of Service</a>
+                    <a href="../privacy.html" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html> 

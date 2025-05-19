@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaoCabu - Travel Packages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/packages-header.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 12rem 0 8rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .package-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .package-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .package-price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #3498db;
+        }
+        
+        .package-duration {
+            color: #6c757d;
+        }
+        
+        .package-features {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .package-features li {
+            margin-bottom: 5px;
+        }
+        
+        .filter-section {
+            padding: 2rem 0;
+            background-color: #f8f9fa;
+        }
+        
+        .filter-btn {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">YaoCabu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Travel Packages</h1>
+                    <p class="lead">Discover our curated collection of unforgettable travel experiences</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-title">Find Your Perfect Package</h2>
+                    <div class="filter-buttons mt-4">
+                        <button class="btn btn-outline-primary filter-btn active" data-filter="all">All Packages</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="luxury">Luxury</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="adventure">Adventure</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="beach">Beach</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="cultural">Cultural</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="family">Family</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages-section py-5">
+        <div class="container">
+            <div class="row package-grid">
+                <!-- Luxury Package -->
+                <div class="col-lg-4 col-md-6 package-item luxury">
+                    <div class="card package-card">
+                        <img src="../images/packages/maldives-luxury.jpg" class="card-img-top" alt="Maldives Luxury Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Maldives Paradise Escape</h5>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Maldives</p>
+                            <p class="package-duration"><i class="fas fa-calendar-alt me-2"></i>7 Days / 6 Nights</p>
+                            <p class="card-text">Experience ultimate luxury in overwater villas with private pools, spa treatments, and gourmet dining.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="package-price">$3,999</span><span class="text-muted">/person</span>
+                                </div>
+                                <a href="destinations/maldives.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adventure Package -->
+                <div class="col-lg-4 col-md-6 package-item adventure">
+                    <div class="card package-card">
+                        <img src="../images/packages/nepal-trek.jpg" class="card-img-top" alt="Nepal Adventure Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Himalayan Trekking Adventure</h5>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Nepal</p>
+                            <p class="package-duration"><i class="fas fa-calendar-alt me-2"></i>14 Days / 13 Nights</p>
+                            <p class="card-text">Trek through the Himalayas, visit ancient monasteries, and experience local culture.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="package-price">$2,499</span><span class="text-muted">/person</span>
+                                </div>
+                                <a href="destinations/nepal.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beach Package -->
+                <div class="col-lg-4 col-md-6 package-item beach">
+                    <div class="card package-card">
+                        <img src="../images/packages/bali-beach.jpg" class="card-img-top" alt="Bali Beach Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Bali Beach Retreat</h5>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Bali, Indonesia</p>
+                            <p class="package-duration"><i class="fas fa-calendar-alt me-2"></i>10 Days / 9 Nights</p>
+                            <p class="card-text">Relax on pristine beaches, explore temples, and enjoy traditional Balinese culture.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="package-price">$2,799</span><span class="text-muted">/person</span>
+                                </div>
+                                <a href="destinations/bali.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cultural Package -->
+                <div class="col-lg-4 col-md-6 package-item cultural">
+                    <div class="card package-card">
+                        <img src="../images/packages/japan-culture.jpg" class="card-img-top" alt="Japan Cultural Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Japanese Cultural Journey</h5>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Japan</p>
+                            <p class="package-duration"><i class="fas fa-calendar-alt me-2"></i>12 Days / 11 Nights</p>
+                            <p class="card-text">Experience traditional tea ceremonies, visit ancient temples, and explore modern cities.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="package-price">$3,299</span><span class="text-muted">/person</span>
+                                </div>
+                                <a href="destinations/japan.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Family Package -->
+                <div class="col-lg-4 col-md-6 package-item family">
+                    <div class="card package-card">
+                        <img src="../images/packages/paris-family.jpg" class="card-img-top" alt="Paris Family Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris Family Adventure</h5>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Paris, France</p>
+                            <p class="package-duration"><i class="fas fa-calendar-alt me-2"></i>8 Days / 7 Nights</p>
+                            <p class="card-text">Family-friendly activities, Disneyland Paris, and cultural experiences for all ages.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="package-price">$2,999</span><span class="text-muted">/person</span>
+                                </div>
+                                <a href="destinations/paris.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Safari Package -->
+                <div class="col-lg-4 col-md-6 package-item luxury adventure">
+                    <div class="card package-card">
+                        <img src="../images/packages/africa-safari.jpg" class="card-img-top" alt="Africa Safari Package">
+                        <div class="card-body">
+                            <h5 class="card-title">African Safari Experience</h5>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Kenya</p>
+                            <p class="package-duration"><i class="fas fa-calendar-alt me-2"></i>10 Days / 9 Nights</p>
+                            <p class="card-text">Luxury safari lodges, game drives, and exclusive wildlife encounters.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="package-price">$4,499</span><span class="text-muted">/person</span>
+                                </div>
+                                <a href="destinations/kenya.html" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title">Package Inclusions</h2>
+                    <p class="section-subtitle">What's included in our travel packages</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hotel text-primary mb-3" style="font-size: 2.5rem;"></i>
+                            <h4>Accommodation</h4>
+                            <p>Premium hotels and resorts with carefully selected amenities and locations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-utensils text-primary mb-3" style="font-size: 2.5rem;"></i>
+                            <h4>Meals</h4>
+                            <p>Daily breakfast and selected meals featuring local and international cuisine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-3" style="font-size: 2.5rem;"></i>
+                            <h4>Guided Tours</h4>
+                            <p>Expert local guides and carefully planned itineraries for the best experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-plane text-primary mb-3" style="font-size: 2.5rem;"></i>
+                            <h4>Transportation</h4>
+                            <p>Comfortable transfers and domestic flights included in the package.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-ticket-alt text-primary mb-3" style="font-size: 2.5rem;"></i>
+                            <h4>Activities</h4>
+                            <p>Entry fees to major attractions and selected activities included.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-headset text-primary mb-3" style="font-size: 2.5rem;"></i>
+                            <h4>24/7 Support</h4>
+                            <p>Dedicated support team available throughout your journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 bg-primary text-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Ready to Start Your Journey?</h2>
+                    <p class="lead mb-4">Contact us to customize your perfect travel package.</p>
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <a href="contact.html" class="btn btn-light btn-lg me-3 mb-3">Contact Us</a>
+                        <a href="destinations.html" class="btn btn-outline-light btn-lg mb-3">Explore Destinations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>YaoCabu</h5>
+                    <p>Your premium travel partner providing unforgettable experiences and luxury accommodations worldwide.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="destinations.html" class="text-white">Destinations</a></li>
+                        <li><a href="packages.html" class="text-white">Travel Packages</a></li>
+                        <li><a href="blog.html" class="text-white">Travel Blog</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Travel Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="faq.html" class="text-white">FAQs</a></li>
+                        <li><a href="travel-tips.html" class="text-white">Travel Tips</a></li>
+                        <li><a href="travel-insurance.html" class="text-white">Travel Insurance</a></li>
+                        <li><a href="visa-information.html" class="text-white">Visa Information</a></li>
+                        <li><a href="cancellation-policy.html" class="text-white">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Adventure City</p>
+                        <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@yaocabu-travels.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 YaoCabu. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="terms.html" class="text-white me-3">Terms of Service</a>
+                    <a href="privacy.html" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Package filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const packages = document.querySelectorAll('.package-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to current button
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    packages.forEach(item => {
+                        if (filter === 'all' || item.classList.contains(filter)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaoCabu - Safari, Kenya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .destination-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/destinations/safari.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 12rem 0 8rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .gallery-img {
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+        
+        .feature-box {
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+        
+        .activity-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .activity-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">YaoCabu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Destination Header -->
+    <header class="destination-header">
+        <div class="container">
+            <h1>Kenyan Safari Adventure</h1>
+            <p class="lead">Experience the wild beauty of Africa's most iconic wildlife destination</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-5">
+        <div class="container">
+            <!-- Overview Section -->
+            <section class="overview mb-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Discover Kenya's Wildlife</h2>
+                        <p>Embark on an unforgettable journey through Kenya's vast savannas, where you'll witness the majestic Big Five and experience the raw beauty of nature. From the Great Migration in the Maasai Mara to the flamingos of Lake Nakuru, Kenya offers some of the most spectacular wildlife viewing opportunities in the world.</p>
+                        <p>Our expert guides will take you on thrilling game drives, walking safaris, and cultural experiences that will leave you with memories to last a lifetime.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-6 mb-4">
+                                <div class="feature-box text-center">
+                                    <i class="fas fa-camera fa-3x mb-3"></i>
+                                    <h4>Wildlife Photography</h4>
+                                    <p>Capture stunning moments with professional guidance</p>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="feature-box text-center">
+                                    <i class="fas fa-hotel fa-3x mb-3"></i>
+                                    <h4>Luxury Lodges</h4>
+                                    <p>Stay in premium accommodations with stunning views</p>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="feature-box text-center">
+                                    <i class="fas fa-users fa-3x mb-3"></i>
+                                    <h4>Cultural Experience</h4>
+                                    <p>Meet the Maasai people and learn their traditions</p>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="feature-box text-center">
+                                    <i class="fas fa-binoculars fa-3x mb-3"></i>
+                                    <h4>Expert Guides</h4>
+                                    <p>Learn from experienced wildlife specialists</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activities Section -->
+            <section class="activities mb-5">
+                <h2 class="text-center mb-4">Popular Activities</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card activity-card">
+                            <img src="../../images/destinations/safari-activities/game-drive.jpg" class="card-img-top" alt="Game Drive">
+                            <div class="card-body">
+                                <h5 class="card-title">Game Drives</h5>
+                                <p class="card-text">Morning and evening safaris to spot the Big Five and other wildlife in their natural habitat.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card activity-card">
+                            <img src="../../images/destinations/safari-activities/hot-air-balloon.jpg" class="card-img-top" alt="Hot Air Balloon">
+                            <div class="card-body">
+                                <h5 class="card-title">Hot Air Balloon Safari</h5>
+                                <p class="card-text">Experience the savanna from above with a breathtaking sunrise balloon ride.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card activity-card">
+                            <img src="../../images/destinations/safari-activities/maasai-village.jpg" class="card-img-top" alt="Maasai Village">
+                            <div class="card-body">
+                                <h5 class="card-title">Maasai Village Visit</h5>
+                                <p class="card-text">Immerse yourself in the rich culture and traditions of the Maasai people.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section class="gallery mb-5">
+                <h2 class="text-center mb-4">Photo Gallery</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <img src="../../images/destinations/safari-gallery/lion.jpg" class="gallery-img w-100" alt="Lion">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="../../images/destinations/safari-gallery/elephant.jpg" class="gallery-img w-100" alt="Elephant">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="../../images/destinations/safari-gallery/sunset.jpg" class="gallery-img w-100" alt="Sunset">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Packages Section -->
+            <section class="packages mb-5">
+                <h2 class="text-center mb-4">Safari Packages</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Classic Safari</h5>
+                                <p class="card-text">4-day safari including game drives and cultural experiences.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success"></i> 3 nights accommodation</li>
+                                    <li><i class="fas fa-check text-success"></i> Daily game drives</li>
+                                    <li><i class="fas fa-check text-success"></i> Professional guide</li>
+                                </ul>
+                                <h4 class="text-primary">$1,299</h4>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Luxury Safari</h5>
+                                <p class="card-text">7-day premium safari with exclusive experiences.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success"></i> 6 nights luxury lodge</li>
+                                    <li><i class="fas fa-check text-success"></i> Hot air balloon ride</li>
+                                    <li><i class="fas fa-check text-success"></i> Private guide</li>
+                                </ul>
+                                <h4 class="text-primary">$2,999</h4>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Family Safari</h5>
+                                <p class="card-text">5-day family-friendly safari adventure.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success"></i> 4 nights family lodge</li>
+                                    <li><i class="fas fa-check text-success"></i> Child-friendly activities</li>
+                                    <li><i class="fas fa-check text-success"></i> Educational programs</li>
+                                </ul>
+                                <h4 class="text-primary">$1,999</h4>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About YaoCabu</h5>
+                    <p>Your trusted partner in creating unforgettable travel experiences.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../about.html" class="text-light">About Us</a></li>
+                        <li><a href="../contact.html" class="text-light">Contact</a></li>
+                        <li><a href="../privacy.html" class="text-light">Privacy Policy</a></li>
+                        <li><a href="../terms.html" class="text-light">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 YaoCabu. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html> 
